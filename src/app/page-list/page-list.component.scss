@@ -1,0 +1,31 @@
+@import "../../scss/color";
+
+.list-view{
+  width: 100%;
+  padding: map-get($borders, cube) * 2;
+}
+
+.list-view h4{
+  color: map-get($colors, white);
+  font-size: map-get($borders, cube) * 3;
+  margin: 0 0 map-get($borders, cube) * 2 0;
+  padding: 0;
+  font-weight: regular;
+  transition: all 250ms;
+  cursor: pointer;
+}
+
+.list-view h4 span{
+  font-size: map-get($borders, cube) * 1.5;
+}
+
+.list-view h4:hover{
+  color: map-get($colors, prime);
+}
+
+.list-view .todo-elements{
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+}

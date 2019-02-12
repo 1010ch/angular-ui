@@ -1,0 +1,21 @@
+@import "../../../scss/color";
+
+header{
+  border-top:  map-get($borders, cube) * 0.5 solid map-get($colors, prime);
+  width: 100%;
+  padding: map-get($borders, cube) * 2;
+}
+
+header h1{
+  color: map-get($colors, white);
+  line-height: 0.8em;
+  font-weight: bold;
+  font-size: map-get($borders, cube) * 6;
+  text-transform: uppercase;
+  margin:0;
+  padding: 0;
+}
+
+header h1 span{
+  color: map-get($colors, prime);
+}

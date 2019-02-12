@@ -1,0 +1,58 @@
+@import "../../../scss/color";
+
+.todo-form{
+  width: 100%;
+  background-color: map-get($colors, white);
+  margin: 0 0 map-get($borders, cube) * 2 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: stretch;
+  height: map-get($borders, cube) * 8;
+}
+
+.todo-form .todo-content{
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.todo-form .todo-content input{
+  font-size: map-get($borders, cube) * 2;
+  padding: map-get($borders, cube) * 2;
+  color: map-get($colors, second);
+  background-color: map-get($colors, white);
+  width: 100%;
+  border: none;
+  word-break: break-word;
+}
+
+.todo-form .todo-content input::placeholder{
+  opacity: 0.5;
+  font-style: italic;
+  color: map-get($colors, second);
+}
+
+.todo-form .todo-content input:focus{
+  outline: none;
+}
+
+.todo-form .create{
+  color: map-get($colors, white);
+  font-size: map-get($borders, cube) * 2;
+  padding: map-get($borders, cube) * 2;
+  cursor: pointer;
+  background-color: map-get($colors, prime);
+}
+
+.todo-form .create span{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
